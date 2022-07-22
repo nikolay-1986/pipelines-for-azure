@@ -10,6 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+-powershell: 'Start-sleep - s 300 '
+ displayName: 'Powershel Script'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
